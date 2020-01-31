@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      html,
+      body,
+      #root {
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap');
+        height: 100%;
+        width: 100%;
+        background: #eff3f6;
+
+        /* text-rendering: optimizeLegibility !important; */
+        /* -webkit-font-smoothing: antialiased !important; */
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+
+      .header {
+        height: 20px;
+        width: 100%;
+        border: 1px solid #f0a;
+      }
+
+      .divisor {
+        height: 100%;
+        width: 33.333%;
+        border: 1px solid #0af;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="header"></div>
+      <div class="container">
+        <div class="divisor"></div>
+        <div class="divisor"></div>
+        <div class="divisor"></div>
+      </div>
+    </div>
+  </body>
+</html>
